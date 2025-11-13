@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Calculator Vinkal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: radial-gradient(circle at top left, #0a0a0a, #101820, #0c2233);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 950px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(18px) saturate(180%);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      padding: 40px 50px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    header h1 {
+      font-size: 26px;
+      background: linear-gradient(90deg, #00e6ff, #007bff, #6f00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #cfd8e3;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    section {
+      margin-bottom: 25px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      padding: 15px 20px;
+      border-radius: 14px;
+    }
+
+    section:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #00d0ff;
+      margin-bottom: 8px;
+    }
+
+    p, li {
+      color: #dce3ec;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style: square;
+    }
+
+    code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 3px 6px;
+      border-radius: 6px;
+      color: #ffcb6b;
+      font-family: monospace;
+    }
+
+    .note {
+      background: linear-gradient(135deg, rgba(0, 128, 255, 0.2), rgba(140, 0, 255, 0.2));
+      border-left: 4px solid #00e6ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #b9c4d0;
+      font-size: 13px;
+    }
+
+    .download-app-btn {
+      width: 100%;
+      background: linear-gradient(90deg, #007bff, #00e6ff);
+      border: none;
+      padding: 14px;
+      border-radius: 14px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .download-app-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #00a6ff, #007bff);
+      box-shadow: 0 0 15px rgba(0, 195, 255, 0.5);
+    }
+
+    .download-app-btn i {
+      font-size: 18px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width: 600px) {
+      .container { padding: 25px; }
+      h1 { font-size: 22px; }
+      .download-app-btn { font-size: 15px; }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy — Calculator Vinkal</h1>
+      <p>Last Updated: November 13, 2025</p>
+    </header>
+
+    <section>
+      <h2>Core Functionality</h2>
+      <ul>
+        <li>Basic Calculator</li>
+        <li>Currency Calculator</li>
+        <li>Unit Converter</li>
+        <li>Discount Calculator</li>
+        <li>Percentage Calculator</li>
+        <li>GST Calculator</li>
+        <li>Date Calculator</li>
+        <li>Health Calculator</li>
+        <li>Loan Calculator</li>
+      </ul>
+      <p>The app also includes a <strong>Calculation History</strong> feature, stored locally on your device.</p>
+    </section>
+
+    <section>
+      <h2>Customization</h2>
+      <ul>
+        <li><strong>Themes:</strong> Choose from various color themes saved locally.</li>
+        <li><strong>Startup Calculator:</strong> Select your preferred calculator at app launch.</li>
+        <li><strong>Keep Screen On:</strong> Option to prevent screen timeout while using the app.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data Handling</h2>
+      <ul>
+        <li><strong>Local Storage:</strong> All app data is stored using <code>SharedPreferences</code>.</li>
+        <li><strong>No Personal Information:</strong> The app does not collect or share PII.</li>
+        <li><strong>No Server-Side Storage:</strong> All operations occur on your device.</li>
+        <li><strong>Permissions:</strong> No special permissions required.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third-Party Libraries</h2>
+      <ul>
+        <li><strong>Gson:</strong> Used for serializing and deserializing calculation history for local storage only.</li>
+      </ul>
+    </section>
+
+    <div class="note">
+      <strong>Important:</strong>
+      <p>All data remains stored on your device. You may clear your calculation history anytime from the app settings. No data is transmitted externally.</p>
+    </div>
+
+    <footer>
+      <p>Calculator Vinkal — Local-first calculator with full privacy. No data collection, no tracking.</p>
+      <button class="download-app-btn" onclick="downloadApp()"><i class="fa-solid fa-download"></i> Download Our App</button>
+    </footer>
+  </div>
+
+  <script>
+    function downloadApp() {
+      window.location.href = '#';
+    }
+  </script>
+</body>
+</html>
